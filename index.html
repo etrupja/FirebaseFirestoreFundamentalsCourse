@@ -10,9 +10,14 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <!-- font awesome for the icons -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-        
+
         <!-- custom styles -->
         <link rel="stylesheet" href="styles.css" >
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+        <script src="config.js"></script>
 
         <!-- initialize script -->
         <script src="initialize.js"></script>
@@ -30,16 +35,16 @@
         <div class="container">
 
                 <!-- button to create an employee -->
-                <button class="btn btn-success" id="createEmployee"> 
+                <button class="btn btn-success" id="createEmployee">
                     Create Employee <i class="fa fa-plus" aria-hidden="true"></i>
                 </button>
 
                 <!-- Filters drop down -->
                 <div class="btn-group pull-right">
-                    <button type="button" 
-                            class="btn btn-default dropdown-toggle" 
-                            data-toggle="dropdown" 
-                            aria-haspopup="true" 
+                    <button type="button"
+                            class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
                             aria-expanded="false">
                     Default Employee Filters <i class="fa fa-filter" aria-hidden="true"></i>
                     </button>
@@ -74,7 +79,7 @@
                                     <input type="email" class="form-control" id="email" placeholder="Email address">
                                   </div>
                                 </div>
-        
+
                                 <div class="form-row">
                                         <div class="form-group col-md-4">
                                           <label for="age">Age</label>
@@ -104,7 +109,7 @@
                                     <button class="btn btn-primary" id="dynamicBtn"></button>
                                 </div>
                 </div>
-        
+
                 <table class="table table-striped">
                         <thead class="thead-inverse">
                           <tr>

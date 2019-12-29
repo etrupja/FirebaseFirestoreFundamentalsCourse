@@ -1,0 +1,12 @@
+{
+  "name": "FirebaseFirestoreFundamentalsCourse",
+  "version": "1.0.0",
+  "description": "Firebase Firestore Fundamentals Course - Application Template Files",
+  "main": "script.js",
+  "repository": "git@github.com:rbaryla/FirebaseFirestoreFundamentalsCourse.git",
+  "author": "rbaryla <robert@em4u.pl>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
